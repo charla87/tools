@@ -1,0 +1,98 @@
+export const projects = [
+  {
+    title: "Procesador de PDFs en lote",
+    categories: ["Python", "Documentos", "Procesos"],
+    tags: ["Python", "PDF", "Proceso documental"],
+    summary:
+      "Automatización para preparar documentos repetitivos sin tener que abrir y modificar cada archivo manualmente.",
+    problem: "Demasiados PDFs tratados uno a uno.",
+    input: "Carpeta con documentos PDF.",
+    automation: "Revisión, unión, marcado o preparación en lote.",
+    output: "PDFs finales ordenados y listos para usar.",
+    impact: "Menos tiempo manual y menos riesgo de omisiones.",
+  },
+  {
+    title: "Extractor de datos a Excel",
+    categories: ["Python", "Documentos", "Procesos"],
+    tags: ["Python", "Excel", "Extracción"],
+    summary:
+      "Herramienta para convertir información dispersa en documentos en una tabla clara y revisable.",
+    problem: "Copiar datos manualmente desde documentos.",
+    input: "PDFs, textos o archivos de una carpeta.",
+    automation: "Detección de campos, limpieza y estructuración.",
+    output: "Excel con columnas homogéneas.",
+    impact: "Datos comparables y mejor trazabilidad.",
+  },
+  {
+    title: "Preparador de imágenes de producto",
+    categories: ["Python", "Diseño", "Procesos"],
+    tags: ["Python", "Imagen", "Web"],
+    summary:
+      "Script para transformar fotografías de producto en imágenes cuadradas, limpias y listas para publicar.",
+    problem: "Formatos irregulares y preparación manual de imágenes.",
+    input: "Carpeta con JPG/PNG de producto.",
+    automation: "Lienzo cuadrado, centrado y exportación optimizada.",
+    output: "Imágenes 2000 × 2000 px en JPG.",
+    impact: "Catálogo visual más consistente.",
+  },
+  {
+    title: "Diccionario rápido de códigos",
+    categories: ["Python", "Documentos"],
+    tags: ["Python", "Códigos", "Consulta rápida"],
+    summary:
+      "Miniherramienta para consultar descripciones, referencias o equivalencias a partir de códigos internos.",
+    problem: "Buscar códigos en archivos o listados largos.",
+    input: "Código o texto pegado por el usuario.",
+    automation: "Búsqueda en diccionario y devolución inmediata.",
+    output: "Descripción copiable al portapapeles.",
+    impact: "Menos interrupciones y consultas más rápidas.",
+  },
+  {
+    title: "Organizador de archivos por reglas",
+    categories: ["Python", "Documentos", "Procesos"],
+    tags: ["Python", "Archivos", "Carpetas"],
+    summary:
+      "Automatización para localizar, copiar, clasificar o renombrar archivos según códigos, extensiones o patrones de nombre.",
+    problem: "Gestión manual de carpetas con muchos archivos.",
+    input: "Carpeta origen, carpeta destino y criterios de búsqueda.",
+    automation: "Filtrado por extensión, código o coincidencia parcial.",
+    output: "Archivos seleccionados y ordenados.",
+    impact: "Búsquedas más rápidas y menos errores de selección.",
+  },
+  {
+    title: "Prompts para imágenes y mockups",
+    categories: ["IA", "Diseño"],
+    tags: ["IA", "Diseño", "Prompts"],
+    summary:
+      "Plantillas de instrucciones para generar fondos, escenas, estanterías, mockups o composiciones visuales con criterios consistentes.",
+    problem: "Resultados visuales poco consistentes con IA.",
+    input: "Brief, imagen base o descripción de producto.",
+    automation: "Prompt estructurado con restricciones visuales.",
+    output: "Imágenes más alineadas con el objetivo creativo.",
+    impact: "Menos pruebas y mejor dirección visual.",
+  },
+  {
+    title: "Asistentes para resumir y ordenar información",
+    categories: ["IA", "Python", "Documentos"],
+    tags: ["IA", "Python", "Asistente"],
+    summary:
+      "Prototipos que ayudan a transformar información larga o desordenada en resúmenes, checklists, tablas o borradores de respuesta.",
+    problem: "Demasiado texto para revisar y convertir en acciones.",
+    input: "Emails, documentos, notas o requisitos.",
+    automation: "Resumen, clasificación y propuesta de siguiente paso.",
+    output: "Checklist, tabla o borrador estructurado.",
+    impact: "Mejor comunicación y menos pérdida de contexto.",
+  },
+  {
+    title: "Bot privado para crear playlists",
+    categories: ["IA", "Python"],
+    tags: ["IA", "Python", "Prototipo"],
+    summary:
+      "Proyecto experimental que convierte una petición musical en una lista organizada mediante IA, APIs y automatización.",
+    problem: "Crear listas musicales personalizadas consume tiempo.",
+    input: "Estilo, situación, artistas o estado de ánimo.",
+    automation: "Interpretación del prompt y generación de playlist.",
+    output: "Lista musical lista para usar.",
+    impact: "Ejemplo de integración entre IA, APIs y experiencia de usuario.",
+  },
+];

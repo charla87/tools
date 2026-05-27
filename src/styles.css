@@ -342,6 +342,7 @@ code {
   border-radius: 16px;
   background: var(--accent-soft);
   font-size: 1.35rem;
+  font-weight: 900;
 }
 
 .value-grid p,
@@ -351,11 +352,36 @@ code {
   color: var(--muted);
 }
 
+.toolbar {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) 1.2fr;
+  gap: 16px;
+  align-items: start;
+  margin-bottom: 16px;
+}
+
+.search-input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--text);
+  font: inherit;
+  outline: none;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.04);
+}
+
+.search-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.12);
+}
+
 .filters {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 24px;
 }
 
 .filter {
@@ -374,18 +400,20 @@ code {
   border-color: var(--primary);
 }
 
+.results-count {
+  margin-bottom: 24px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .projects-grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .project-card {
-  min-height: 310px;
+  min-height: 430px;
   display: flex;
   flex-direction: column;
-}
-
-.project-card.hidden {
-  display: none;
 }
 
 .project-top {
@@ -407,10 +435,30 @@ code {
   font-weight: 800;
 }
 
-.project-card ul {
+.process-list {
+  display: grid;
+  gap: 10px;
   margin: auto 0 0;
-  padding-left: 18px;
+}
+
+.process-list div {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.process-list dt {
+  font-weight: 900;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.process-list dd {
+  margin: 0;
   color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .case-grid {
@@ -486,6 +534,24 @@ code {
   border-top: 1px solid var(--line);
 }
 
+@media (max-width: 1000px) {
+  .toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 900px) {
   .menu-button {
     display: inline-block;
@@ -520,10 +586,7 @@ code {
   }
 
   .hero-metrics,
-  .value-grid,
-  .projects-grid,
-  .case-grid,
-  .steps {
+  .value-grid {
     grid-template-columns: 1fr;
   }
 
@@ -551,6 +614,15 @@ code {
   .section-muted {
     padding-top: 58px;
     padding-bottom: 58px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .process-list div {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 
   .contact-section {

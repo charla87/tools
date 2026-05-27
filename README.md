@@ -1,59 +1,80 @@
-# Pequeñas herramientas para mejorar procesos
+# Process Tools Portfolio
 
-Web estática para publicar un portfolio en GitHub Pages.
+Portfolio público en React + Vite para GitHub Pages.
 
-## Archivos
+## URL prevista
 
-```text
-.
-├── index.html
-├── styles.css
-├── script.js
-├── .nojekyll
-└── assets/
-```
-
-## Cómo publicarla en GitHub Pages
-
-1. Crea un repositorio en GitHub.
-   - Opción recomendada: `pequenas-herramientas`
-   - También puedes usar `tuusuario.github.io` si quieres que sea tu web principal.
-
-2. Sube estos archivos al repositorio.
-
-3. En GitHub:
-   - Entra en el repositorio.
-   - Ve a **Settings**.
-   - Ve a **Pages**.
-   - En **Build and deployment**, elige:
-     - Source: **Deploy from a branch**
-     - Branch: **main**
-     - Folder: **/root**
-   - Guarda.
-
-4. La web estará disponible en una URL tipo:
+Este proyecto está preparado para publicarse en:
 
 ```text
-https://tuusuario.github.io/pequenas-herramientas/
+https://charla87.github.io/tools/
 ```
 
-O, si el repositorio se llama `tuusuario.github.io`:
+Por eso `vite.config.js` usa:
+
+```js
+base: "/tools/"
+```
+
+Si cambias el nombre del repositorio, cambia también esa línea.
+
+## Desarrollo local
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Publicación en GitHub Pages
+
+1. Sube estos archivos al repositorio.
+2. Ve a:
 
 ```text
-https://tuusuario.github.io/
+Settings → Pages
 ```
 
-## Qué editar primero
+3. Cambia **Source** a:
 
-En `index.html`:
+```text
+GitHub Actions
+```
 
-- Cambia `Process Tools` por tu nombre o marca.
-- Cambia el email de contacto:
-  - Busca `tu-email@ejemplo.com`
-- Cambia los textos de cada proyecto.
-- Añade enlaces reales si quieres mostrar demos, repositorios o vídeos.
+4. Haz push a `main`.
+5. Revisa la pestaña **Actions** para confirmar que el despliegue termina en verde.
 
-## Recomendación
+## Editar proyectos
 
-No publiques datos internos, rutas de empresa, tokens, credenciales, documentos reales o información sensible.
-Para demos reales con Python, usa una Raspberry/servidor separado con acceso protegido.
+Los proyectos se editan en:
+
+```text
+src/data/projects.js
+```
+
+Cada proyecto tiene esta estructura:
+
+```js
+{
+  title: "Nombre del proyecto",
+  categories: ["Python", "Documentos"],
+  tags: ["Python", "PDF"],
+  summary: "Resumen corto",
+  problem: "Problema que resuelve",
+  input: "Qué recibe",
+  automation: "Qué automatiza",
+  output: "Qué entrega",
+  impact: "Qué mejora"
+}
+```
+
+## Seguridad
+
+No publiques rutas internas, tokens, documentos reales de empresa, APIs privadas ni datos sensibles.
+Este portfolio es público.
