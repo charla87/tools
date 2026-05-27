@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pequeñas herramientas para mejorar procesos</title>
+  <meta name="description" content="Portfolio de pequeñas herramientas con Python, IA y automatización para mejorar procesos diarios." />
+  <meta name="theme-color" content="#111827" />
+
+  <meta property="og:title" content="Pequeñas herramientas para mejorar procesos" />
+  <meta property="og:description" content="Python, IA y automatización aplicada a tareas reales." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <span class="brand-mark">PT</span>
+        <span class="brand-text">Process Tools</span>
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#casos">Casos</a>
+        <a href="#metodo">Método</a>
+        <a href="#contacto" class="nav-cta">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">Python · IA · Automatización · Productividad</p>
+        <h1>Pequeñas herramientas para mejorar procesos</h1>
+        <p class="hero-subtitle">
+          Portfolio de soluciones ligeras para reducir tareas repetitivas, ordenar información
+          y acelerar decisiones con herramientas prácticas.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#proyectos" class="button button-primary">Ver proyectos</a>
+          <a href="#metodo" class="button button-secondary">Cómo trabajo</a>
+        </div>
+
+        <div class="hero-metrics" aria-label="Indicadores">
+          <div>
+            <strong>+Python</strong>
+            <span>scripts y automatización</span>
+          </div>
+          <div>
+            <strong>+IA</strong>
+            <span>prompts y asistentes</span>
+          </div>
+          <div>
+            <strong>+Excel/PDF</strong>
+            <span>procesos administrativos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Resumen visual del portfolio">
+        <div class="terminal-card">
+          <div class="terminal-top">
+            <span></span><span></span><span></span>
+          </div>
+          <pre><code>analizar_documentos()
+extraer_datos()
+generar_excel()
+reducir_tarea_manual()</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="section-header">
+        <p class="eyebrow">Objetivo</p>
+        <h2>Herramientas pequeñas, impacto medible</h2>
+        <p>
+          No todo necesita una gran plataforma. Muchas mejoras nacen de automatizar una tarea concreta:
+          renombrar archivos, revisar PDFs, preparar datos, generar informes o transformar imágenes.
+        </p>
+      </div>
+
+      <div class="value-grid">
+        <article>
+          <span class="icon">⏱</span>
+          <h3>Ahorro de tiempo</h3>
+          <p>Automatizar pasos repetitivos para liberar horas de trabajo manual.</p>
+        </article>
+        <article>
+          <span class="icon">✅</span>
+          <h3>Menos errores</h3>
+          <p>Validaciones, reglas y formatos consistentes para evitar fallos humanos.</p>
+        </article>
+        <article>
+          <span class="icon">📊</span>
+          <h3>Mejores decisiones</h3>
+          <p>Datos ordenados y resúmenes claros para comparar opciones más rápido.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos">
+      <div class="section-header">
+        <p class="eyebrow">Portfolio</p>
+        <h2>Proyectos destacados</h2>
+        <p>
+          Ejemplos de herramientas y prototipos que pueden adaptarse a distintos procesos.
+        </p>
+      </div>
+
+      <div class="filters" aria-label="Filtros de proyectos">
+        <button class="filter active" data-filter="all">Todos</button>
+        <button class="filter" data-filter="python">Python</button>
+        <button class="filter" data-filter="ia">IA</button>
+        <button class="filter" data-filter="documentos">Documentos</button>
+        <button class="filter" data-filter="diseño">Diseño</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card" data-category="python documentos">
+          <div class="project-top">
+            <span class="tag">Python</span>
+            <span class="tag">PDF</span>
+          </div>
+          <h3>Procesador de PDFs en lote</h3>
+          <p>
+            Herramienta para aplicar acciones repetitivas sobre múltiples PDFs:
+            marcas, comprobaciones, uniones o preparación documental.
+          </p>
+          <ul>
+            <li>Selección de carpetas</li>
+            <li>Procesamiento masivo</li>
+            <li>Salida ordenada</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-category="python documentos">
+          <div class="project-top">
+            <span class="tag">Python</span>
+            <span class="tag">Excel</span>
+          </div>
+          <h3>Extractor de datos a Excel</h3>
+          <p>
+            Automatización para leer documentos, detectar campos relevantes y generar
+            una tabla estructurada lista para revisar.
+          </p>
+          <ul>
+            <li>Menos copia/pega</li>
+            <li>Datos centralizados</li>
+            <li>Formato homogéneo</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-category="python diseño">
+          <div class="project-top">
+            <span class="tag">Python</span>
+            <span class="tag">Imagen</span>
+          </div>
+          <h3>Preparador de imágenes web</h3>
+          <p>
+            Script para convertir imágenes de producto en formato cuadrado,
+            con lienzo limpio, centrado y tamaño optimizado para web.
+          </p>
+          <ul>
+            <li>Formato 2000 × 2000 px</li>
+            <li>Fondo blanco</li>
+            <li>Exportación JPG</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-category="python documentos">
+          <div class="project-top">
+            <span class="tag">Python</span>
+            <span class="tag">Códigos</span>
+          </div>
+          <h3>Diccionario rápido de códigos</h3>
+          <p>
+            Miniherramienta para consultar referencias internas, descripciones
+            o equivalencias a partir de códigos de producto.
+          </p>
+          <ul>
+            <li>Interfaz simple</li>
+            <li>Búsqueda rápida</li>
+            <li>Copiado al portapapeles</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-category="ia diseño">
+          <div class="project-top">
+            <span class="tag">IA</span>
+            <span class="tag">Diseño</span>
+          </div>
+          <h3>Prompts para imágenes de producto</h3>
+          <p>
+            Plantillas de prompts para generar fondos, escenas, mockups y composiciones
+            manteniendo coherencia visual y criterios de marca.
+          </p>
+          <ul>
+            <li>Estilo consistente</li>
+            <li>Briefs reutilizables</li>
+            <li>Control de composición</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-category="ia python">
+          <div class="project-top">
+            <span class="tag">IA</span>
+            <span class="tag">Automatización</span>
+          </div>
+          <h3>Asistentes internos de proceso</h3>
+          <p>
+            Prototipos para convertir instrucciones, documentos o emails en acciones
+            más estructuradas: resúmenes, checklists o borradores.
+          </p>
+          <ul>
+            <li>Menos fricción</li>
+            <li>Mejor comunicación</li>
+            <li>Seguimiento claro</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="casos">
+      <div class="section-header">
+        <p class="eyebrow">Casos de uso</p>
+        <h2>Antes y después</h2>
+        <p>
+          Una forma sencilla de explicar el valor: problema, herramienta y resultado.
+        </p>
+      </div>
+
+      <div class="case-grid">
+        <article class="case-card">
+          <h3>Documentación repetitiva</h3>
+          <div class="case-columns">
+            <div>
+              <span>Antes</span>
+              <p>Revisión manual de archivos, renombrado y preparación uno a uno.</p>
+            </div>
+            <div>
+              <span>Después</span>
+              <p>Proceso guiado por carpeta, reglas automáticas y salida ordenada.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <h3>Datos dispersos</h3>
+          <div class="case-columns">
+            <div>
+              <span>Antes</span>
+              <p>Información en PDFs, emails, hojas Excel y carpetas compartidas.</p>
+            </div>
+            <div>
+              <span>Después</span>
+              <p>Tabla única para revisar, filtrar, comparar y tomar decisiones.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <h3>Tareas visuales repetidas</h3>
+          <div class="case-columns">
+            <div>
+              <span>Antes</span>
+              <p>Preparación manual de imágenes, tamaños, nombres y formatos.</p>
+            </div>
+            <div>
+              <span>Después</span>
+              <p>Exportación estandarizada con criterios web y menor margen de error.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="metodo">
+      <div class="section-header">
+        <p class="eyebrow">Método</p>
+        <h2>Cómo convierto una tarea en herramienta</h2>
+      </div>
+
+      <div class="steps">
+        <article>
+          <span>01</span>
+          <h3>Detectar el cuello de botella</h3>
+          <p>Identificar una tarea repetitiva, lenta o propensa a errores.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Definir la regla</h3>
+          <p>Convertir el proceso en pasos claros: entradas, validaciones y salidas.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Crear una versión mínima</h3>
+          <p>Primero una herramienta simple que funcione. Luego se mejora.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Medir el impacto</h3>
+          <p>Tiempo ahorrado, errores reducidos y facilidad de uso para el equipo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div>
+        <p class="eyebrow">Contacto</p>
+        <h2>¿Tienes un proceso que se repite demasiado?</h2>
+        <p>
+          Podemos analizarlo, convertirlo en una herramienta sencilla y medir si realmente
+          aporta valor.
+        </p>
+      </div>
+      <a class="button button-primary" href="mailto:tu-email@ejemplo.com?subject=Consulta%20sobre%20automatizaci%C3%B3n%20de%20procesos">
+        Escribir email
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Pequeñas herramientas para mejorar procesos.</p>
+    <p>Portfolio público · Python · IA · Automatización</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
